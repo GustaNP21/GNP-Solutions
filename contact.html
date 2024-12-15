@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GNP - Contact Section</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contacts.css">
+</head>
+<body>
+
+   
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="cv.html">CEO Curriculum Vitae</a></li>
+        </ul>
+    </nav>
+
+   
+    <section class="contact-info">
+        <div class="contact-info-container">
+            <h3>Contact Information</h3>
+            <p><strong>Phone:</strong> +18255592109</p>
+            <p><strong>Email:</strong> g.nunespereira219@mybvc.ca</p>
+            <p><strong>Alternative Phone:</strong> +1 4033366563</p>
+        </div>
+    </section>
+
+    
+    <section class="contact-section">
+        <div class="contact-form-container">
+            <form id="contact-form">
+                <div class="input-group">
+                    <h1 id="contactMe">CONTACT ME</h1>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+                <button type="button" id="submit-btn">Submit Message</button>
+                <div id="success-message" class="success-message"></div>
+            </form>
+        </div>
+    </section>
+
+
+   
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2024 Gustavo Nunes Pereira. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <script src="contacts.js"></script>
+</body>
+</html>

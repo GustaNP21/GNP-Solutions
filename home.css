@@ -1,0 +1,100 @@
+
+.home-content {
+    margin-top: 90px;
+    padding: 20px;
+    text-align: center;
+}
+
+/*About Me section */
+.about-me {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.about-me h2 {
+    font-size: 28px;
+    color: #0277bd;
+    margin-bottom: 10px;
+}
+
+.about-me p {
+    font-size: 16px;
+    color: #01579b;
+}
+
+/* Skills section */
+.skills {
+    background-color: #e1f5fe;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.skills h2 {
+    font-size: 28px;
+    color: #0277bd;
+    margin-bottom: 10px;
+}
+
+.skill {
+    margin: 15px 0;
+}
+
+.skill h3 {
+    font-size: 22px;
+    color: #0288d1;
+}
+
+.skill p {
+    font-size: 16px;
+    color: #01579b;
+}
+
+/*  Services section */
+.services {
+    background-color: #b3e5fc;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.services h2 {
+    font-size: 28px;
+    color: #0277bd;
+    margin-bottom: 10px;
+}
+
+.services p {
+    font-size: 16px;
+    color: #01579b;
+}
+
+.services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.services ul li {
+    font-size: 16px;
+    color: #0288d1;
+    margin: 5px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a3d75;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer-content p {
+    font-size: 14px;
+    margin: 0;
+}

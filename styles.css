@@ -1,0 +1,172 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Nav Bar  */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+/* CV Container Styles */
+.cv-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 70px;
+}
+
+.cv-content {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+header {
+    background-color: #e1f0ff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+header p {
+    font-size: 18px;
+    color: #666;
+}
+
+
+footer {
+    background-color: #1a3d75;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Topic Styles */
+.cv-topic {
+    background-color: #cfe2ff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cv-topic h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cv-topic p {
+    font-size: 16px;
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+}
+
+.cv-topic.open p {
+    display: block;
+    opacity: 1;
+}
+
+.cv-topic.open {
+    transform: translateX(0);
+}
+
+.cv-topic:not(.open) {
+    transform: translateX(50px);
+}
+
+/* Adding the borders on the left and right side of the content */
+.cv-content::before,
+.cv-content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    background-color: #b0c7ea;
+}
+
+.cv-content::before {
+    left: -50px;
+}
+
+.cv-content::after {
+    right: -50px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #1a3d75;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer-content p {
+    font-size: 14px;
+    margin: 0;
+}
